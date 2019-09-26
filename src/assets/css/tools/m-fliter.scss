@@ -1,0 +1,34 @@
+.fliter-container{
+    text-align: left;
+    display: flex;
+    padding: 15px 20px 0;
+   
+    .label{
+        flex-basis: 160px;
+        height: 20px;
+        .title,.all{
+            font-size: 14px;
+            display: inline-block;
+            height: 22px;
+            line-height: 22px;
+        }
+        .title{
+            width: 80px;
+        }
+        .all{
+            text-align: center;
+            width: 48px;
+            border-radius: 100px;
+            background: linear-gradient(to bottom right,#FFD000,#FFBD00);
+            color: #222222;
+        }
+    }
+    .tags{
+        padding-bottom: 10px;
+        width: 700px;
+        &.border{
+            border-bottom: 1px solid #E5E5E5;
+        }
+    }
+    
+}

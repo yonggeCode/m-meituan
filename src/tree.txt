@@ -1,0 +1,108 @@
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 EA15-BB2F
+F:.
+│  App.vue
+│  main.js
+│  router.js
+│  store.js
+│  tree.txt
+│  
+├─assets
+│  │  logo.png
+│  │  
+│  ├─css
+│  │  │  assets.scss
+│  │  │  indexPage.scss
+│  │  │  
+│  │  ├─chooseCity
+│  │  │      container.scss
+│  │  │      
+│  │  ├─HomePage
+│  │  │  ├─footer
+│  │  │  │      footer.scss
+│  │  │  │      
+│  │  │  └─header
+│  │  │          nav.scss
+│  │  │          search.scss
+│  │  │          
+│  │  ├─main
+│  │  │  ├─banner
+│  │  │  │      left-banner.scss
+│  │  │  │      right-banner.scss
+│  │  │  │      
+│  │  │  └─container
+│  │  │          container.scss
+│  │  │          
+│  │  └─tools
+│  │          m-list.scss
+│  │          m-select.scss
+│  │          
+│  ├─font
+│  │      iconfontNew.woff
+│  │      MFShangHei-Regular.woff
+│  │      
+│  └─image
+│      │  12315.png
+│      │  dianping.png
+│      │  jingying.png
+│      │  kexin.png
+│      │  life.jpg
+│      │  logo.png
+│      │  maoyan.png
+│      │  meituan.png
+│      │  waimai.png
+│      │  zhenguo.png
+│      │  
+│      └─slider
+│              food.jpg
+│              hotel.jpg
+│              movie.jpg
+│              paidui.png
+│              takeout.jpg
+│              
+├─components
+│  ├─footer
+│  │      Footer.vue
+│  │      
+│  ├─header
+│  │  │  index.vue
+│  │  │  
+│  │  ├─searchBar
+│  │  │      Search.vue
+│  │  │      SearchBar.vue
+│  │  │      
+│  │  └─topBar
+│  │          Geo.vue
+│  │          login.vue
+│  │          nav.vue
+│  │          TopBar.vue
+│  │          
+│  ├─main
+│  │  ├─banner
+│  │  │      Left-banner.vue
+│  │  │      Right-banner.vue
+│  │  │      
+│  │  └─container
+│  │          Container.vue
+│  │          
+│  └─tools
+│          m-list.vue
+│          m-select.vue
+│          
+├─mock
+│  ├─container
+│  │      mockquality-container.js
+│  │      
+│  └─headerNav
+│          mocknav.js
+│          
+├─page
+│      ChooseCity.vue
+│      MainPage.vue
+│      
+├─plugins
+│      element.js
+│      
+└─views
+        Home.vue
+        

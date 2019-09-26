@@ -1,0 +1,47 @@
+.youLikeWrapper{
+    padding: 0 10px;
+    margin-top: 20px; 
+    img{
+        display: inline-block;
+        width: 100%;
+
+    }
+    span{
+        display: inline-block;
+        height: 18px;
+        line-height: 18px;
+        margin-right:10px; 
+        color:#666;
+    }
+    .info-box{
+        text-align: left;
+        .goods-info,.avgPrice,.goods-title,.goods-score{
+            margin-top: 10px;
+        }
+        .goods-title{
+            font-size: 14px;
+            color: #222222;
+            line-height: 20px;
+            width: 100%;
+            margin: 0;
+            font-weight: 500;
+            
+        }
+        .goods-score{
+            display: flex;
+            .el-tate{
+                display: inline-block;
+            }
+        }
+        .price{
+            font-size: 14px;
+            font-weight: 700;
+            color: #F60;
+            margin-right: 0;
+        }
+        .price.font-price{
+            font-size: 22px;
+        }
+    }
+
+}

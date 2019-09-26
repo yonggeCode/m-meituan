@@ -1,0 +1,217 @@
+.banner-nav{
+    .arrow{
+        width: 4px;
+        height: 4px;
+        color: #BFBFBF;
+        border-bottom: 1px solid #BFBFBF;
+        border-right: 1px solid #BFBFBF;
+        transform: rotate(-45deg);
+        display: block;
+        position: absolute;
+        right: 13px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    width: 100%;
+    height: 39.6rem;
+    border: 1px solid black;
+    margin-top:-50px;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    background: #FFF;
+    .title{
+        height: 50px;
+        line-height: 50px;
+        color: #222222;
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 15px;
+        text-align: left;
+    }
+    .navList{
+        width: 100%;
+        height: 35.5rem;
+        padding:0;
+        margin: 0;
+        list-style: none;
+        li{
+            height: 1.8rem;
+            padding:0 12px;
+            line-height: 1.8rem;
+            font-size: 13px;
+            color: #646464;
+            text-align: left;
+            position: relative;
+            &:hover{
+                background-color:rgba(255,150,0,0.08);
+                &>a{
+                    font-weight: 700;
+                    color: #222;
+                }
+                &>.arrow{
+                    color: #222222;
+                    border-bottom: 1px solid #222222;
+                    border-right: 1px solid #222222;
+                }
+            }
+            i{
+                font-family: 'meituan';
+                font-size: 14px;
+                font-style: normal;
+                opacity: 0.3;
+                margin-right: 11px;
+                &:before {
+                    width: 14px;
+                    height: 14px;
+                    display: inline-block;
+                }
+            }
+            .food {
+                &:before {
+                  content: "\e622";
+                }
+              }
+      
+              .takeout {
+                &:before {
+                  content: "\e630";
+                }
+              }
+      
+              .hotel {
+                &:before {
+                  content: "\e62a";
+                }
+              }
+      
+              .homestay {
+                &:before {
+                  content: "\e631";
+                }
+              }
+      
+              .movie {
+                &:before {
+                  content: "\e62c";
+                  position: relative;
+                  left: -2px;
+                }
+              }
+      
+              .airport {
+                &:before {
+                  content: "\e632";
+                }
+              }
+      
+              .ktv {
+                &:before {
+                  content: "\e627";
+                }
+              }
+      
+              .life {
+                &:before {
+                  content: "\e633";
+                }
+              }
+      
+              .hair {
+                &:before {
+                  content: "\e626";
+                  transform: scale(0.7);
+                }
+              }
+      
+              .marry {
+                &:before {
+                  content: "\e629";
+                }
+              }
+      
+              .offspring {
+                &:before {
+                  content: "\e623";
+                }
+              }
+      
+              .sport {
+                &:before {
+                  content: "\e62b";
+                }
+              }
+      
+              .furniture {
+                &:before {
+                  content: "\e625";
+                }
+              }
+      
+              .study {
+                &:before {
+                  content: "\e624";
+                }
+              }
+      
+              .health {
+                &:before {
+                  content: "\e628";
+                }
+              }
+      
+              .bar {
+                &:before {
+                  content: "\e621";
+                }
+              }
+
+            
+        }
+    }
+    .detail{
+        position: absolute;
+        width: 33.3rem;
+        height: 35.5rem;
+        left: 20rem;
+        top: -12px;
+        box-sizing: border-box;
+        background: #FFF;
+        z-index: 999;
+    }
+    .detail-area{
+        padding: 0 15px;
+        margin: 0 auto;
+        text-align: left;
+      
+        .detail-title{
+            width: 100%;
+            border-bottom:1px solid #E5E5E5;
+            position: relative;
+            h2{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #222;
+                    cursor: pointer;
+                    display: inline-block;
+                    text-align: left;
+            }
+            .more{
+                margin: 15px 0;
+                line-height: max;
+                position: absolute;
+                right: 22px;
+                color: #999;
+                cursor: pointer;
+            }
+           
+        }
+        .detail-content{
+            a{
+              display: inline-block;
+                margin: 10px 16px 0 0;
+                
+            }
+        }
+    }
+}

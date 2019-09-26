@@ -1,0 +1,84 @@
+$font-color:#666;
+$active-color:#FE8C00;
+:root,body{
+    margin:0;
+    padding: 0;
+    font-size: 12px;
+    #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: $font-color; 
+    }
+  }
+.inline-block{
+    display:inline-block;
+}
+.textLeft{
+    text-align: left;
+}
+.container-margin{
+    margin: 0 4px;
+}
+
+a{
+    text-decoration: none;
+    color: $font-color;
+    &:hover{
+        color: $active-color;
+    }
+}
+.black__color{
+    color: #222;
+}
+.font__color{
+    color: $font-color;
+}
+.active__color{
+    color: $active-color;
+}
+.grey__color{
+    color: #999;
+}
+.red__color{
+    color: red;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.bottom_border{
+    border: 1px solid #E5E5E5;
+    background: #F4F4F4;
+}
+
+
+
+.clearFix::after,.clearFix::before{
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 682850 */
+    src: url('//at.alicdn.com/t/font_682850_58yfbhz7jvf.eot');
+    src: url('//at.alicdn.com/t/font_682850_58yfbhz7jvf.eot?#iefix') format('embedded-opentype'),
+      url('//at.alicdn.com/t/font_682850_58yfbhz7jvf.woff') format('woff'),
+      url('//at.alicdn.com/t/font_682850_58yfbhz7jvf.ttf') format('truetype'),
+      url('//at.alicdn.com/t/font_682850_58yfbhz7jvf.svg#iconfont') format('svg');
+  }
+  
+  @font-face {
+    font-family: 'meituan';
+    src: url(//s0.meituan.net/bs/fe-web-meituan/c19c6e9/font/home-category-iconfont.eot?t=1503027869484);
+      src: url(//s0.meituan.net/bs/fe-web-meituan/c19c6e9/font/home-category-iconfont.eot?t=1503027869484#iefix) format('embedded-opentype'),
+      url(//s0.meituan.net/bs/fe-web-meituan/c19c6e9/font/home-category-iconfont.woff?t=1503027869484) format('woff'),
+      url(//s0.meituan.net/bs/fe-web-meituan/c19c6e9/font/home-category-iconfont.ttf?t=1503027869484) format('truetype'),
+      url(//s0.meituan.net/bs/fe-web-meituan/c19c6e9/font/home-category-iconfont.svg?t=1503027869484#home-category-iconfont) format('svg')
+  }
+
+
