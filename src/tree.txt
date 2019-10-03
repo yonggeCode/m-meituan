@@ -2,16 +2,21 @@
 ¾íÐòÁÐºÅÎª EA15-BB2F
 F:.
 ©¦  App.vue
+©¦  axios.js
 ©¦  main.js
 ©¦  router.js
 ©¦  store.js
 ©¦  tree.txt
 ©¦  
+©À©¤api
+©¦      index.js
+©¦      
 ©À©¤assets
 ©¦  ©¦  logo.png
 ©¦  ©¦  
 ©¦  ©À©¤css
 ©¦  ©¦  ©¦  assets.scss
+©¦  ©¦  ©¦  goodsList.scss
 ©¦  ©¦  ©¦  indexPage.scss
 ©¦  ©¦  ©¦  
 ©¦  ©¦  ©À©¤chooseCity
@@ -34,8 +39,12 @@ F:.
 ©¦  ©¦  ©¦          container.scss
 ©¦  ©¦  ©¦          
 ©¦  ©¦  ©¸©¤tools
+©¦  ©¦          m-fliter.scss
+©¦  ©¦          m-goodCard.scss
 ©¦  ©¦          m-list.scss
 ©¦  ©¦          m-select.scss
+©¦  ©¦          m-tag.scss
+©¦  ©¦          m-youLikeCard.scss
 ©¦  ©¦          
 ©¦  ©À©¤font
 ©¦  ©¦      iconfontNew.woff
@@ -49,6 +58,7 @@ F:.
 ©¦      ©¦  life.jpg
 ©¦      ©¦  logo.png
 ©¦      ©¦  maoyan.png
+©¦      ©¦  map.png
 ©¦      ©¦  meituan.png
 ©¦      ©¦  waimai.png
 ©¦      ©¦  zhenguo.png
@@ -86,11 +96,16 @@ F:.
 ©¦  ©¦          Container.vue
 ©¦  ©¦          
 ©¦  ©¸©¤tools
+©¦          m-fliter.vue
+©¦          m-goodsCard.vue
 ©¦          m-list.vue
 ©¦          m-select.vue
+©¦          m-tag.vue
+©¦          m-youLikeCard.vue
 ©¦          
 ©À©¤mock
 ©¦  ©À©¤container
+©¦  ©¦      leftNav.js
 ©¦  ©¦      mockquality-container.js
 ©¦  ©¦      
 ©¦  ©¸©¤headerNav
@@ -98,7 +113,10 @@ F:.
 ©¦          
 ©À©¤page
 ©¦      ChooseCity.vue
+©¦      GoodsList.vue
+©¦      Login.vue
 ©¦      MainPage.vue
+©¦      Register.vue
 ©¦      
 ©À©¤plugins
 ©¦      element.js
