@@ -3,10 +3,11 @@ axios.defaults.baseURL = 'http://api.duyiedu.com';
 // 添加请求拦截器
 axios.interceptors.request.use(function (config) {
     // 在发送请求之前做些什么
+    // console.log(config.params)
     config.params={
         ...config.params,
-        // appkey:'yongge123_1547734951398'
-        appkey:'leebin19851001_1547731445676'
+        appkey:'yongge123_1547734951398'
+        // appkey:'leebin19851001_1547731445676'
     }
     return config;
   }, function (error) {

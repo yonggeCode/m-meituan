@@ -10,7 +10,7 @@
       </li>
     </ul>
     <dl class="detail"
-    v-if="true"
+    v-if="detailShow"
     @mouseenter="detailEnter"
     @mouseleave="Leave"
     >

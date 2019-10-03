@@ -21,8 +21,13 @@ var api =  {
     },
     getRecentCity(params){
         return axios.get('/api/meituan/city/recents.json',params)
+    },
+    login(params){
+        return axios.get('/api/meituan/login',params)
+    },
+    register(params){
+        return axios.get('/api/meituan/register',params)
     }
-    
 
 }
 

@@ -12,6 +12,7 @@
         &.dropBar:hover{
             background: #fff;
             border-color:#E5E5E5;
+            z-index: 1000;
             box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1); 
            .list{
                display: block;

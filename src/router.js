@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import MainPage from './page/MainPage'
-import ChooseCity from './page/ChooseCity'
-import GoodsList from './page/GoodsList'
 Vue.use(Router)
 
 export default new Router({
@@ -14,29 +11,34 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
-      redirect:'/home',
-      children:[
+      redirect: '/home',
+      children: [
         {
           path: '/home',
           name: 'mainPage',
-          component: MainPage,
+          component: () => import('./page/MainPage'),
         },
         {
           path: '/chooseCity',
           name: 'chooseCity',
-          component: ChooseCity,
+          component: () => import('./page/ChooseCity')
         },
         {
           path: '/s/:name',
-          name:'goodsList',
-          component:GoodsList
+          name: 'goodsList',
+          component: () => import('./page/GoodsList')
         }
       ]
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    // }
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('./page/Login')
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import('./page/Register')
+    },
   ]
 })

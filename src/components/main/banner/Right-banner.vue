@@ -29,12 +29,25 @@
                 <img src="//s0.meituan.net/bs/fe-web-meituan/e350c4a/img/avatar.jpg" alt="">
               </div>
             </div>
-            <p class="Hi">Hi! 你好</p>
-            <div>
-              <el-button class="button" round>注册</el-button>
+            <p class="Hi"> 
+              {{user || 'Hi! 你好'}}
+            </p>
+            <div class="welcome" v-if="user">
+              欢迎来到勇哥的美团
             </div>
             <div>
-              <el-button class="button" round>立即登录</el-button>
+              <router-link
+              v-if="!user"
+               type="div" to="/register">
+                <el-button class="button" round>注册</el-button>
+              </router-link>
+            </div>
+            <div>
+              <router-link 
+              v-if="!user"
+              type="div" to="/login">
+                <el-button class="button" round>立即登录</el-button>
+              </router-link>
             </div>
           </div>
         </el-col>
@@ -72,7 +85,12 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
+  mounted(){
+    console.log(this.$store.state.user);
+    console.log(this.user)
+  },
   data() {
     return {
       sliderImg: [
@@ -81,8 +99,12 @@ export default {
         "http://p0.meituan.net/codeman/a97baf515235f4c5a2b1323a741e577185048.jpg",
         "http://p0.meituan.net/codeman/33ff80dc00f832d697f3e20fc030799560495.jpg",
         "https://p1.meituan.net/travelcube/01d2ab1efac6e2b7adcfcdf57b8cb5481085686.png"
-      ]
+      ],
+      // userName:''
     };
+  },
+  computed:{
+    ...mapState(['user']),
   }
 };
 </script>

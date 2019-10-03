@@ -5,12 +5,18 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    city:'南京'
+    city:'北京',
+    user:'',
   },
   mutations: {
     setCity(state,val){
       state.city = val
+    },
+    isLogin(state,val){
+      console.log(val);
+      state.user = val
     }
+
   },
   actions: {
     setCity({commit},val){

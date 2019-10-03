@@ -28,7 +28,6 @@
           remote
           reserve-keyword
           placeholder="请输入关键词"
-          :remote-method="remoteMethod"
           :loading="loading"
           >
           <el-option v-for="item in searchList" :key="item" :label="item" :value="item"></el-option>
@@ -58,10 +57,7 @@
         class="city-area" :id="'city-'+ item">
           <span class="city-label">{{item}}</span>
           <span class="cities">
-            <a href="#">南京</a>
-            <a href="#">南京</a>
-            <a href="#">南京</a>
-            <a href="#">南京</a>
+            <router-link :to="{name:'mainPage'}" @click.native="changeDefaultCity('南京')">南京</router-link>
           </span>
         </div>
       </el-row>
@@ -82,7 +78,6 @@ export default {
       this.recentList = res.data.data
     });
     api.getProvince().then((res)=>{
-      console.log(res.data.data)
       this.provinceData = res.data.data;
       this.provinceList = res.data.data.map((item)=>{
         return item.provinceName
@@ -151,18 +146,17 @@ export default {
       this.cityActive = true;
       this.provinceActive = false;
     },
-    remoteMethod(val){
-        console.log(val)
-    },
     changeProvince(val){
       this.curProvince = val;
       this.disabled = false;
-      console.log(this.curProvince)
+      // console.log(this.curProvince)
     },
     changeCity(val){
-      console.log(val)
       this.$store.dispatch('setCity',val.name);
       this.$router.push({name:'mainPage'})
+    },
+    changeDefaultCity(val){
+      this.$store.commit('setCity',val);
     }
   }
 };

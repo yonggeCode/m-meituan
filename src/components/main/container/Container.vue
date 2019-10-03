@@ -35,9 +35,6 @@
 
 <script>
 export default {
-  mounted() {
-    console.log(this.cardData);
-  },
   props: ["Data"],
   data() {
     return {

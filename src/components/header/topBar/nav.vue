@@ -65,9 +65,6 @@
 <script>
 import mockData from "@/mock/headerNav/mocknav.js";
 export default {
-    mounted () {
-        console.log(this.appArr)
-    },
   data() {
     return {
       ...mockData

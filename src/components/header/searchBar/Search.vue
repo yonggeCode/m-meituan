@@ -24,7 +24,7 @@
       <dd class="h-tags"
         v-for="(item,index) in innerHotTags || ['暂无数据']"
         :key="index">
-        <router-link to="/">{{item}}</router-link>
+        <router-link :to="{name:'goodsList',params:{name:item}}">{{item}}</router-link>
       </dd>   
     </div>
     <div class="searchTags"
@@ -32,7 +32,7 @@
       <dd class="s-tags"
       v-for="(item,index) in searchTags|| ['暂无数据']"
       :key="index">
-        <router-link to="/">{{item}}</router-link>
+        <router-link :to="{name:'goodsList',params:{name:item}}">{{item}}</router-link>
       </dd>
     </div>
   </div>
